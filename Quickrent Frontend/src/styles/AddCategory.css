@@ -1,0 +1,112 @@
+.add-category-container {
+  width: 480px;
+  padding: 20px;
+  margin: 50px auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  width: 190px;
+  margin: 0 5px;
+  background: #fff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #1c76c4;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.toggle-button.active,
+.toggle-button:hover {
+  background: #1c76c4;
+  color: #fff;
+}
+
+.form-container {
+  text-align: left;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Darker Grotesque", sans-serif;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Darker Grotesque", sans-serif;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #1c76c4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.submit-button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .add-category-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .form-group input,
+  .form-group textarea,
+  .submit-button {
+    width: 100%;
+  }
+}

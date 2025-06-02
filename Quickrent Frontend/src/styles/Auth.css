@@ -1,0 +1,175 @@
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(120vh - 120px);
+    background-color: #edf6ff;
+    padding: 20px;
+  }
+
+  .admin-login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(120vh - 120px);
+    background-color: #edf6ff;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-toggle {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .form-toggle button {
+    flex: 1;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #1c76c4;
+    background: none;
+    color: #1c76c4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .login-button{
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+  }
+  
+  .ad-login-btn{
+    display: block;
+    width: 30%;
+    height: 70%;
+    border: none !important;
+    padding: clamp(0.8rem, 2vw, 1rem) clamp(2rem, 6px, 3rem) !important;
+    font-size: clamp(1rem, 2vw, 1.2rem) !important;
+    border-radius: 10px !important;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .form-toggle button.active {
+    background-color: #1c76c4;
+    color: white;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  button {
+    width: 15%;
+    padding: 10px;
+    background-color: #1c76c4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1c76c4;
+    color: #ddd;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: -10px;
+  }
+  
+  .forgot-password a {
+    color: #1c76c4;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .dropdown select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Admin Login Specific Styles */
+  .admin-login-container {
+    min-height: calc(100vh - 120px);
+  }
+  
+  .admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+  /* Account Drop-> Address Page */
+  
+  /* .main-container applied for both address and personal info page */
+  .main-container{ 
+    display: grid;
+    margin: 100px;
+  }
+
+/* Account Drop-> Personal Info Page */
+
+  .personal-edit-btn{
+    margin-top: 15px;
+    margin-bottom: -20px;
+  }
+
+  
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 20px;
+    }
+    
+    h2 {
+      font-size: 20px;
+    }
+    
+    input, button {
+      font-size: 14px;
+    }
+  }
+  

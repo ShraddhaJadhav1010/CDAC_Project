@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Context\**" />
+    <Compile Remove="Entity\**" />
+    <Content Remove="Context\**" />
+    <Content Remove="Entity\**" />
+    <EmbeddedResource Remove="Context\**" />
+    <EmbeddedResource Remove="Entity\**" />
+    <None Remove="Context\**" />
+    <None Remove="Entity\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MailKit" Version="4.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.1" />
+    <PackageReference Include="MimeKit" Version="4.10.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+    <PackageReference Include="Razorpay" Version="3.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTO\CategoryDTO\" />
+    <Folder Include="DTO\OrderDTO\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
+</Project>

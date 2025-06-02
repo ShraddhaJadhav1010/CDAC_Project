@@ -1,0 +1,58 @@
+.add-admin-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-admin-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1c76c4;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-fields{
+  width: 120%;
+}
+
+
+
+.submit-btn {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #1c76c4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+.submit-btn:hover {
+  background-color: #215c90;
+}

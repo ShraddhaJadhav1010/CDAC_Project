@@ -1,0 +1,12 @@
+/* Webfont: FarazDemo */@font-face {
+    font-family: 'FarazDemo';
+    src: url('FarazDemo.eot'); /* IE9 Compat Modes */
+    src: url('FarazDemo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FarazDemo.woff') format('woff'), /* Modern Browsers */
+         url('FarazDemo.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('FarazDemo.svg#FarazDemo') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

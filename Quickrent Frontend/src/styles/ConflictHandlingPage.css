@@ -1,0 +1,92 @@
+/* Center the form container */
+.conflict-handling-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background-color: #f8f9fa; /* Light background for form area */
+}
+
+.conflict-handling-header {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333; /* Dark gray for better contrast */
+  text-align: center;
+}
+
+.conflict-handling-form {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;
+  max-width: 500px; /* Restrict form width for better UI */
+}
+
+.conflict-form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align labels and inputs to the left */
+}
+
+.conflict-form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.conflict-form-input,
+.conflict-form-textarea,
+.conflict-form-file {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.conflict-form-textarea {
+  min-height: 80px; /* Minimum height for textarea */
+  resize: vertical; /* Allow resizing only vertically */
+}
+
+.conflict-form-input:focus,
+.conflict-form-textarea:focus,
+.conflict-form-file:focus {
+  border-color: #0d6efd; /* Highlight border on focus */
+  outline: none;
+}
+
+.conflict-form-submit {
+  background-color: #0d6efd; /* Blue background for submit button */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.conflict-form-submit:hover {
+  background-color: #0b5ed7; /* Darker blue for hover effect */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .conflict-handling-container {
+    padding: 20px; /* Add padding for smaller devices */
+  }
+
+  .conflict-handling-form {
+    width: 90%; /* Reduce form width */
+  }
+}
